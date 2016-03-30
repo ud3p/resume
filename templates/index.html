@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+      <div class="jumbotron">
+            <div class="row">
+              <div class="col-sm-6">
+                <div><b>Name:</b> {{ contact.name }}</div>
+                <div><b>Last Name:</b> {{ contact.surname }}</div>
+                <div><b>Date of birth:</b> {{ contact.date_of_birth|date:"d F, Y" }}</div>
+                <div><b>Photo:</b>
+                <div>
+                {% if contact.photo %}
+                <img src="{{ contact.photo.url }}">
+                {% endif %}
+                </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 index">
+                <div><b>Contacts</b></div>
+                <div><b>Email:</b> {{ contact.email }}</div>
+                <div><b>Phone:</b> {{ contact.phone }}</div>
+                <div><b>Skype:</b> {{ contact.skype }}</div>
+                <div><b>Other contacts:</b>
+                <div>{{ contact.other_contacts|linebreaksbr }}</div>
+                </div>
+                <div><b>Education:</b>
+                <div>{{ contact.bio|linebreaksbr }}</div>
+                </div>
+                <div><b>Experience:</b>
+                <div>{{ contact.exp|linebreaksbr }}</div>
+                </div>
+              </div>
+          </div>
+      </div>
+<p><a href="{% url 'edit' contact.id %}">edit</a> <a href="{% url 'requests' %}">requests</a></p>
+
+{% endblock content %}

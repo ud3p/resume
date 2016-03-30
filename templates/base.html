@@ -1,0 +1,63 @@
+{% load staticfiles %}
+{% load my_tt %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}Junior Python Developer{% endblock title %}</title>
+
+        <meta http-equiv="X-UA-Compatible" content="chrome=IE7" />
+
+        <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+        <link rel="stylesheet" href="{% static 'css/screen.css' %}" media="screen, projection"/>
+        <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+        <link href="{% static 'css/jquery-ui.min.css' %}" rel="stylesheet">
+        <link href="{% static 'css/jquery-ui.structure.min.css' %}" rel="stylesheet">
+        <link href="{% static 'css/jquery-ui.theme.min.css' %}" rel="stylesheet">
+
+        {% block extra_head %}{% endblock extra_head %}
+
+    </head>
+    <body id="{% block body_id %}{% endblock %}" class="{% block body_class %}{% endblock %}">
+     <div class="container">
+       <nav class="navbar navbar-default">
+         <div class="container-fluid">
+           <div class="navbar-header">
+           <a class="navbar-brand" href="{% url 'index' %}">My Resume</a>
+           </div>
+
+           {% if not user.is_authenticated %}
+           <p class="navbar-text navbar-right">
+             <a href="{% url 'django.contrib.auth.views.login' %}">Login</a>
+           </p>
+           {% else %}
+           <p class="navbar-text navbar-right">Hello, <b>{{ user }}</b>! 
+             <a href="{% url 'django.contrib.auth.views.logout' %}?next=/">Logout</a> or 
+             <a href="{% edit_link user %}">edit admin info</a>
+           </p>
+           {% endif %}
+
+         </div>
+       </nav>
+
+        <div class="page-header">
+          <h1 class="descr">Junior Python Developer</h1>
+
+        {% block content %}{% endblock content %}
+
+        </div>
+      </div>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/jquery-1.12.1.min.js' %}"></script>
+        <script src="{% static 'js/jquery.form.min.js' %}"></script>
+        <script src="{% static 'js/jquery-ui.min.js' %}"></script>
+        <script src="{% static 'js/underscore-min.js' %}"></script>
+        <script src="{% static 'js/script.js' %}"></script>
+
+        {% block add_js %}{% endblock add_js %}
+    </body>
+</html>

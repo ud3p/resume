@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block content %}
+{% csrf_token %}
+
+      <div class="jumbotron">
+        <h2 class="requests"></h2>
+          <div class="panel panel-default">
+            <table class="table">
+		<tr>
+		<th>Date</th>
+		<th>Method</th>
+		<th>Path</th>
+		<th>Server Protocol</th>
+		<th>IP</th>
+		<th>Priority</th>
+		</tr>
+
+              <tbody class="requestsTable">
+
+	       {% for request in ten_request %}
+		{% if not request.viewed %}
+		  <tr class="bold-font">
+		{% else %}
+		  <tr>
+		{% endif %}
+                <td>{{ request.date }}</td>
+                <td>{{ request.method }}</td>
+                <td>{{ request.path }}</td>
+                <td>{{ request.server_protocol }}</td>
+                <td>{{ request.ip_addr }}</td>
+                <td>{{ request.priority }}</td>
+                </tr>
+	       {% endfor %}
+
+              </tbody>
+            </table>
+      </div>
+  </div>
+<p><a href="{% url 'index' %}">home</a></p>
+
+{% endblock content %}

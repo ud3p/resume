@@ -1,0 +1,36 @@
+[
+  {
+    "model": "hello.mycontacts",
+    "pk": 1,
+    "fields": {
+      "name": "Pavlo",
+      "surname": "Bredikhin",
+      "date_of_birth": "1990-07-12",
+      "bio": "- Specialist’s Degree in Automated control of technological process Kharkiv National University of - Construction and Architecture, 2012\n - Finished the ItBursa 'Python' course, 2015",
+      "email": "ud3p@mail.ru",
+      "phone": "+38 (050) 401-63-42",
+      "skype": "ng_1990",
+      "other_contacts": "LinkedIn: https://linkedin.com/in/ud3p4\n Github: https://github.com/ud3p/",
+      "exp": "Course project:\n - created the website (http://ud3p.pythonanywhere.com/)\n - used Django, Bootstrap and Git tools\n\n I create a small game using 'Unity'.\n The tasks that I had to decide:\n - the idea and its realization\n - finding and editing content\n - tests and debugging\n - work with GooglePlay and Admob\n My game on GooglePlay:\n https://play.google.com/store/apps/details?id=com.wgn.dev.catchballs&hl=en",
+      "photo": ""
+    }
+  },
+  {
+    "pk": 1,
+    "model": "auth.user",
+    "fields": {
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "is_active": true,
+      "is_superuser": true,
+      "is_staff": true,
+      "last_login": "2016-02-27T11:01:30.444Z",
+      "groups": [],
+      "user_permissions": [],
+      "password": "pbkdf2_sha256$12000$gXyYhrJJfdPU$KslbSr1H0oKgkIVbuFdL/jEdpMpHyW8US3/GXbRlDvw=",
+      "email": "ud3p@mail.ru",
+      "date_joined": "2016-02-26T20:45:37.665Z"
+    }
+  }
+]
