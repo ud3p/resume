@@ -9,6 +9,15 @@
                 <div><b>Name:</b> {{ contact.name }}</div>
                 <div><b>Last Name:</b> {{ contact.surname }}</div>
                 <div><b>Date of birth:</b> {{ contact.date_of_birth|date:"d F, Y" }}</div>
+                <br>
+                <div><b>Contacts</b></div>
+                <div><b>Email:</b> {{ contact.email }}</div>
+                <div><b>Phone:</b> {{ contact.phone }}</div>
+                <div><b>Skype:</b> {{ contact.skype }}</div>
+                <div><b>Other contacts:</b>
+                <div>{{ contact.other_contacts|linebreaksbr }}</div>
+                </div>
+                <br>
                 <div><b>Photo:</b>
                 <div>
                 {% if contact.photo %}
@@ -19,13 +28,6 @@
               </div>
 
               <div class="col-sm-6 index">
-                <div><b>Contacts</b></div>
-                <div><b>Email:</b> {{ contact.email }}</div>
-                <div><b>Phone:</b> {{ contact.phone }}</div>
-                <div><b>Skype:</b> {{ contact.skype }}</div>
-                <div><b>Other contacts:</b>
-                <div>{{ contact.other_contacts|linebreaksbr }}</div>
-                </div>
                 <div><b>Education:</b>
                 <div>{{ contact.bio|linebreaksbr }}</div>
                 </div>
@@ -35,6 +37,7 @@
               </div>
           </div>
       </div>
+
 <p><a href="{% url 'edit' contact.id %}">edit</a> <a href="{% url 'requests' %}">requests</a></p>
 
 {% endblock content %}

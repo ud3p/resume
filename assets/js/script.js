@@ -104,13 +104,13 @@ $(document).ready(function(){
            yearRange: "1900:2026",
            dateFormat: 'yy-mm-dd',
          });
-         $('#ajax_loader').hide();
+         //$('#ajax_loader').hide();
          $('#message').hide();
 
 
          function show_enable() {
              $('#message').show();
-             $('#ajax_loader').show();
+             $('#ajax_loader').css('visibility', 'visible');
              formElementsEnableDisable(true);
          }
 
@@ -179,7 +179,13 @@ $(document).ready(function(){
     
 });
 
+$('#show_username').click(function(){
+  $(this).text('admin')
+});
 
+$('#show_password').click(function(){
+  $(this).text('admin')
+});
 
 $('.index').each(function(){
    $(this).html( $(this).html().replace(/((http|https|ftp):\/\/[\w?=&.\/-;#~%-]+(?![\w\s?&.\/;#~%"=-]*>))/g, '<a target="_blank" href="$1">$1</a> ') );
