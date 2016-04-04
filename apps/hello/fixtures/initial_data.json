@@ -10,8 +10,7 @@
       "email": "ud3p@mail.ru",
       "phone": "+38 (050) 401-63-42",
       "skype": "ng_1990",
-      "other_contacts": "LinkedIn: https://linkedin.com/in/ud3p4\n Github: https://github.com/ud3p/",
-      "exp": "Course project:\n - created the website (http://ud3p.pythonanywhere.com/)\n - used Django, Bootstrap and Git tools\n\n I create a small game using 'Unity'.\n The tasks that I had to decide:\n - the idea and its realization\n - finding and editing content\n - tests and debugging\n - work with GooglePlay and Admob\n My game on GooglePlay:\n https://play.google.com/store/apps/details?id=com.wgn.dev.catchballs&hl=en",
+      "other_contacts": "Course project:\n- created the website (http://ud3p.pythonanywhere.com/)\n- used Django, Bootstrap and Git tools\n\nPet projects:\n1. http://resume.pythonanywhere.com/\n    - Middleware save all requests in db. The requests page updating asynchronously as new requests come in. As page is viewed, all requests considered as read.\n    - Edit form data by using AJAX.\n\nAlso:\nI create a small game using 'Unity'.\nThe tasks that I had to decide:\n- the idea and its realization\n- finding and editing content\n- tests and debugging\n- work with GooglePlay and Admob\nMy game on GooglePlay:\nhttps://play.google.com/store/apps/details?id=com.wgn.dev.catchballs&hl=en",
       "photo": ""
     }
   },
