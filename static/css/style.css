@@ -1,0 +1,210 @@
+/*
+body {
+  background-image: url("../images/bg.png");
+}
+*/
+#ajax_loader{
+  visibility: hidden
+}
+.jumbotron{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container-fluid{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.requests{
+	font-weight: bold;
+	color: #3b5998;
+}
+.col-sm-6{
+    font-size: 12pt;
+}
+
+.navbar-right{
+  padding-right: 50px;
+}
+
+.form .form-group{
+  padding-right: 70px;
+}
+
+#id_photo{
+  float:right;
+}
+
+.to_the_left{
+  padding-right: 201px;
+}
+.navbar-header {
+    padding: 0 30px 0 30px;
+}
+.col-md-4{
+	text-align: center;
+	padding-bottom: 20px;
+	
+}
+
+#image{
+  border:0;
+}
+.col-md-4 p{
+  text-align: left;
+	font-size: 14pt;
+}
+
+.navbar{
+  margin-top: 20px;
+	
+}
+.deviz{
+	color: #3b5998;
+	padding-right: 5px;
+	padding-top: 3px;
+	text-align: right;
+	font-weight: bold;
+	font-size: 14pt;
+}
+.descr, .conts{
+	text-align: center;
+	font-weight: bold;
+	color: #3b5998;
+  
+}
+
+.py{
+	font-weight: bold;
+	/*color: #3b5998;*/
+	font-style: italic;
+}
+
+.top_bar{
+	font-weight: bold;
+	font-size: 14pt;
+	font-family: Italiac;
+}
+.spa{
+	font-weight: bold;
+	margin-left: 30px;
+	font-size: 18pt;
+}
+.students{
+  font-weight: bold;
+	padding-top: 80px;
+}
+
+.top1{
+  font-weight: bold;
+	text-align: left;
+}
+.about_me{
+  font-weight: bold;
+	text-align: left;
+	margin-right: 45px;
+  margin-left: 45px;
+}
+.good_job{
+	color: green;
+}
+
+.my_list{
+	font-size: 14pt;
+}
+
+.coach_img{
+	padding-bottom: 20px;
+}
+
+.background_body{
+    /*background-image: url();
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;*/
+  background: url("../images/background.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.background_404{
+    /*background-image: url();
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;*/
+  background: url("../images/404.gif") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.background_500{
+    /*background-image: url();
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;*/
+  background: url("../images/500.gif") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* TABLE
+-------------------------------------------------- */
+.table thead, .t_head{
+	background-color: #3b5998;
+	color: white;
+	font-weight: bold;
+	font-size: 14pt;
+}
+
+.numbers{
+	font-size: 18pt;
+	text-align:center;
+	vertical-align:middle;
+	
+}
+.my_table tbody tr td{
+	vertical-align:middle;
+	
+}
+.bold-font{
+    font-weight: bold;
+}
+
+
+table tbody tr th{
+	border:#bdbdbd 1px solid;
+	vertical-align:middle;
+	font-weight: bold;
+	font-size: 14pt;
+	text-align:center;
+
+}
+
+table tbody tr td{
+	vertical-align:middle;
+	border:#bdbdbd 1px solid;
+	font-size: 12pt;
+
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
